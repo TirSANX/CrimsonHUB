@@ -1,4 +1,4 @@
-getgenv()['MyName'] = game.Players.LocalPlayer.Name
+getgenv()['Crimson_Config'] = game.Players.LocalPlayer.Name
 getgenv()['JsonEncode'] = function(msg)
     return game:GetService("HttpService"):JSONEncode(msg)
 end
