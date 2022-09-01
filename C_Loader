@@ -1,0 +1,21 @@
+repeat wait() until game:IsLoaded()
+
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+end)
+
+local gtl = "https://raw.githubusercontent.com/TirSANX/CrimsonHUB/main/"
+
+local games = {
+    [9264222904] = "Auto_raid",
+    [9572329421] = "Auto_raid",
+    [9812430518] = "Auto_raid",
+    [8396586868] = "1_Sea",
+    [9432106399] = "2_Sea",
+}
+
+for i, v in pairs(games) do
+    if i == game.PlaceId or i == game.GameId then
+        loadstring(game:HttpGet(gtl .. v))()
+    end
+end
