@@ -16,6 +16,9 @@ local games = {
     [6284583030] = "petxnew.md",
     [10321372166] = "petxnew.md",
     [9993529229] = "counterblox",
+    [2753915549] = "Bloxfruit.lua",
+    [4442272183] = "Bloxfruit.lua",
+    [7449423635] = "Bloxfruit.lua",
 
 }
 
