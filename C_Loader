@@ -12,6 +12,11 @@ local games = {
     [9812430518] = "Auto_raid",
     [8396586868] = "1_Sea",
     [9432106399] = "2_Sea",
+    [286090429] = "arsenal.md",
+    [6284583030] = "petxnew.md",
+    [10321372166] = "petxnew.md",
+    [9993529229] = "counterblox",
+
 }
 
 for i, v in pairs(games) do
