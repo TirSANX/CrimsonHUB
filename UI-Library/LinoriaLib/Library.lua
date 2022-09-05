@@ -1,9 +1,3 @@
-do
-	local ui = game:GetService("CoreGui"):FindFirstChild("ScreenGui")
-	if ui then
-		ui:Destroy()
-	end
-end
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');
