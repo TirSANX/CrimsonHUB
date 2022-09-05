@@ -1,3 +1,0 @@
-# BxB-Hub-PremiumScript
-
-![68747470733a2f2f692e696d6775722e636f6d2f717330487163362e706e67](https://user-images.githubusercontent.com/101545758/185302909-d58c487a-4c20-486f-b603-5a1bdd8526bb.png)
