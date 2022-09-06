@@ -1,7 +1,7 @@
 local httpService = game:GetService('HttpService')
 
 local SaveManager = {} do
-	SaveManager.Folder = 'LinoriaLibSettings'
+	SaveManager.Folder = 'Crimson_UI'
 	SaveManager.Ignore = {}
 	SaveManager.Parser = {
 		Toggle = {
