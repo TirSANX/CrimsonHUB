@@ -1,0 +1,186 @@
+
+---// Loading Section \\---
+task.wait(1)
+repeat  task.wait() until game:IsLoaded()
+if game.PlaceId == 8304191830 then
+    repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+    repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("collection"):FindFirstChild("grid"):FindFirstChild("List"):FindFirstChild("Outer"):FindFirstChild("UnitFrames")
+else
+    repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
+    repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
+end
+------------------------------
+
+getgenv().savefilename = "Crimson_AATConfig.json"
+
+getgenv().UnitCache = {}
+
+for _, Module in next, game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Data"):WaitForChild("Units"):GetDescendants() do
+    if Module:IsA("ModuleScript") and Module.Name ~= "UnitPresets" then
+        for UnitName, UnitStats in next, require(Module) do
+            getgenv().UnitCache[UnitName] = UnitStats
+        end
+    end
+end
+
+
+function sex()
+    -- reads jsonfile
+    local jsonData = readfile(savefilename)
+    local data = HttpService:JSONDecode(jsonData)
+
+    -- global values
+    getgenv().SpawnUnitPos = data.xspawnUnitPos
+    ---// updates the json file
+    function SaveSettings()
+
+        local xdata = {
+            -- unitname = getgenv().unitname,
+            -- unitid = getgenv().unitid,
+            xspawnUnitPos = getgenv().SpawnUnitPos,
+        }
+        print("-_Saving_NewSettings_-")
+        local json = HttpService:JSONEncode(xdata)
+        writefile(savefilename, json)
+
+    end
+end
+    local HttpService = game:GetService("HttpService")
+    local RunService = game:GetService("RunService")
+    local mouse = game.Players.LocalPlayer:GetMouse()
+    local UserInputService = game:GetService("UserInputService")
+    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/TirSANX/UILibrary/main/Console")()
+    local win = DiscordLib:Window("[🐛UPD 4] Anime Adventures".." - "..tostring(identifyexecutor()))
+    local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
+    function MouseClick(UnitPos)
+        local connection
+        connection = UserInputService.InputBegan:Connect(
+            function(input, gameProcessed)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    connection:Disconnect()
+                    local a = Instance.new("Part", game.Workspace)
+                    a.Size = Vector3.new(1, 1, 1)
+                    a.Material = Enum.Material.Neon
+                    a.Position = mouse.hit.p
+                    task.wait()
+                    a.Anchored = true
+                    DiscordLib:Notification("Spawn Unit Posotion:", tostring(a.Position), "Okay!")
+                    a.CanCollide = false
+                    for i = 0, 1, 0.1 do
+                        a.Transparency = i
+                        task.wait()
+                    end
+                    a:Destroy()
+                    SpawnUnitPos[UnitPos]["x"] = a.Position.X
+                    SpawnUnitPos[UnitPos]["y"] = a.Position.Y
+                    SpawnUnitPos[UnitPos]["z"] = a.Position.Z
+                    updatejson()
+                end
+            end)
+    end
+    local autofarmtab = serv:Channel("Auto Farm")
+    autofarmtab:Button("Set Unit 1 Postion", function()
+        DiscordLib:Notification("Set Unit 1 Spawn Position",
+            "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+            "Done")
+        MouseClick("UP1")
+    end)
+
+    autofarmtab:Button("Set Unit 2 Postion", function()
+        DiscordLib:Notification("Set Unit 2 Spawn Position",
+            "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+            "Done")
+        MouseClick("UP2")
+    end)
+    autofarmtab:Button("Set Unit 3 Postion", function()
+        DiscordLib:Notification("Set Unit 3 Spawn Position",
+            "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+            "Done")
+        MouseClick("UP3")
+    end)
+    autofarmtab:Button("Set Unit 4 Postion", function()
+        DiscordLib:Notification("Set Unit 4 Spawn Position",
+            "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+            "Done")
+        MouseClick("UP4")
+    end)
+
+    local axxc = game.Players.LocalPlayer.PlayerGui["spawn_units"].Lives.Main.Desc.Level.Text:split(" ")
+
+    if tonumber(axxc[2]) >= 20 then
+        autofarmtab:Button("Set Unit 5 Postion", function()
+            DiscordLib:Notification("Set Unit 5 Spawn Position",
+                "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+                "Done")
+            MouseClick("UP5")
+        end)
+    end
+
+    if tonumber(axxc[2]) >= 50 then
+        autofarmtab:Button("Set Unit 6 Postion", function()
+            DiscordLib:Notification("Set Unit 6 Spawn Position",
+                "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+                "Done")
+            MouseClick("UP6")
+        end)
+    end
+---// Checks if file exist or not\\---
+if isfile(savefilename) then 
+    sex()
+else
+    local xdata = {
+        -- unitname = "name",
+        -- unitid = "id",
+        xspawnUnitPos = {
+            UP1 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+
+            UP2 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+
+            UP3 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+
+            UP4 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+            
+            UP5 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+
+            UP6 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            }
+        },
+        xselectedUnits = {
+            U1 = nil,
+            U2 = nil,
+            U3 = nil,
+            U4 = nil,
+            U5 = nil,
+            U6 = nil
+        }
+
+    }
+    local json = HttpService:JSONEncode(xdata)
+    writefile(savefilename, json)
+
+    sex()
+end
