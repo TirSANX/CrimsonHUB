@@ -21,7 +21,8 @@ local games = {
     [7449423635] = "Bloxfruit.lua",
     [5985165520] = "newhr.md",
     [6622096267] = "newhr.md",
-
+    [8304191830] = "AAT.lua",
+    [8349889591] = "AAT.lua",
 }
 
 for i, v in pairs(games) do
