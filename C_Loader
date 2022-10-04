@@ -23,6 +23,7 @@ local games = {
     [6622096267] = "newhr.lua",
     [8304191830] = "AAT.lua",
     [8349889591] = "AAT.lua",
+    [914010731] = "Roghoul.lua",
 }
 
 for i, v in pairs(games) do
