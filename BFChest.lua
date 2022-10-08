@@ -94,13 +94,7 @@ local PlaceID = game.PlaceId
         end
      end
 
-     spawn(function()
-        local ohString1 = "SetTeam"
-        local ohString2 = "Pirates"
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(ohString1, ohString2)
-     end)
 
- 
 spawn(function()
    while wait(.8) do
       if Chest_Farm then
