@@ -17,15 +17,7 @@ Join Our Discord Server : https://discord.gg/qyDJcKb3gW
 Scipt made by ! MIAFA
 Join Our Discord Server : https://discord.gg/qyDJcKb3gW
 --]]
-spawn(function()
-  while wait()do
-   pcall(function()
-   if getgenv().Start_Farm then
-     getgenv().Chest_Farm = true
-    end
-     end)
-   end
-  end)
+getgenv().Chest_Farm = true
 local placeId = game.PlaceId
 if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
 repeat wait() until game:IsLoaded() ~= false
