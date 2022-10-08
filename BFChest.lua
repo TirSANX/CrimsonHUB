@@ -103,9 +103,9 @@ spawn(function()
             for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
                 if string.find(v.Name, "Chest") then
                     print(v.Name)
-                    wait(.4)
+                    wait(.2)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,0,0.1)
-                    wait(.4)
+                    wait(.2)
                 end
             end
             for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
