@@ -17,5 +17,133 @@ Join Our Discord Server : https://discord.gg/qyDJcKb3gW
 Scipt made by ! MIAFA
 Join Our Discord Server : https://discord.gg/qyDJcKb3gW
 --]]
+local placeId = game.PlaceId
+if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
+repeat wait() until game:IsLoaded() ~= false
 
-return(function(...)local p={"JCTWqcYxr5tJUAu9yJk=";"qlVB";"JC8XnfVascVu";"lA8Gsa==";"bC4urfpEpPIXNb==";"tMJ9tPu9tb==","pMJ0yoYmvb==","UuulnxIk+JRdqA6xqQ7=","NcIhQMd4vcJXra==";"WfVurGturGUmQoJLNMuiFfVmrGpFrPpuriABrCUPNMuHnlb8UgRaYPVArGVmri5=";"QCJXyPJXl54mrR==","blJtre4YniIDvQTaUb==";"NPJhyIB4tCJxylY0Nfk=";"rMd4vcu3ta==","ncT0tlY5","V5VGvcJFcMyAVC6etGr=";"qoJHscTmncpqNC85QMIXyR==";"rfB4yCh=","JMJ9tlBmrGpgtlYCncVu";"WfVurGturGUmQoJLNMuiFfVmrGpFrPpuriABrCUPNMuHnlb8UgRa";"rMV4NMa=";"tCIHtb==","QMIXtcT5";"rPJ4tMt6NMQ=";"pCJ5QCJXyPuitb==";"JQ66Vu4htM8FyJbaNoe=","tPu3tR==","yMI0na==";"yMILNMQ=","pCJ5bC46NMpXtch=";"JIBqtlpArPTurS==","JMJ9tlBmrGb=","pPu3tMu3tXB3tlrSrCJXyPJX","teYqgirCpfBaQ2HAra==","rfpXncTG";"QMd4vcJXra==","bC4urfb0","NGJ9NR==","JeTL+gVkqcI3qGu7vuS=";"qMJ4tR==","bC4urfb=","niYBrQ4mUuBBbC4X";"yfY6yMJPncdu","gPIHtb==","pCJ5pMJ0sCJ3tMI3yoU=","tPuXtlpmycV7ncT5tlYurfb=";"rMI6rGU=","gM8iscdbNMITtlk=","qlVUNCIetcb=";"b5tXscAu";"QMd4sCJYtR==","roY6NGb=";"JMJ9tlBmrGpQNAB9scVuqcT0yMI3sCQ=","tMI5sb==";"bC4urfbd","nop5roU/WX8GscAurXTXNCY9NfS3sC8HWfsdWCy4NcJ0Wa==","ycTascVj";"UGJznIYpvMAJUPJdta==","bC4urfbX","nM8ArS==";"quVFgepusC8etb==";"piptQet4sJynglIirCS=";"qop5r2yuyR==","NfU=";"tMI5tb==","NPJf","kq65","yCI6yR==","qop5rIVurGt6sCQ=";"lA89tch=";"lA86NPpuvR==";"yM80yoY6NPr=";"gP85QCIHtJVurGturGU3nGVmNS==","QI4qtAYWqx4TJubT";"VJ4uNcI7J5S0rJVDsb==","pPu3t2t6rGV5bC46NMb=";"quVFgeJ3sC8etb==";"UGucyoy5sAQasJ6obP2=","yM83ycALtlk=","JM8AsC4QrPI3rCA6yopurS==","ncb=","","bC44rPIiyMJX"}local function W(W)return p[W-3934]end for W,D in ipairs({{1;83};{1;3},{4;83}})do while D[1]<D[2]do p[D[1]],p[D[2]],D[1],D[2]=p[D[2]],p[D[1]],D[1]+1,D[2]-1 end end do local W=table.concat local D=math.floor local Z={["+"]=14,m=47;N=27;X=50;["2"]=4;f=55,l=23,v=30;K=42,P=38,q=18;a=48,["9"]=44;t=25,Y=9;w=62,["0"]=51;D=10;g=19,e=36,o=7;F=15,J=21;B=1;I=5;V=13;p=17,E=31;["4"]=33;Z=63;h=56;["5"]=52;["6"]=41;G=39;C=54,U=12,H=45;j=43;x=3;k=8;y=29;A=53,s=24,d=49,O=59,W=11;S=32,["7"]=40;Q=20;["8"]=61;R=0,["1"]=60,b=16,n=26;u=37;["3"]=46,c=22;z=2;T=57,L=34,M=6,i=35,["/"]=58,r=28}local P=string.char local L=string.sub local U=type local S=p local g=string.len local x=table.insert for p=1,#S,1 do local j=S[p]if U(j)=="string"then local U=g(j)local J={}local V=1 local n=0 local q=0 while V<=U do local p=L(j,V,V)local W=Z[p]if W then n=n+W*64^(3-q)q=q+1 if q==4 then q=0 local p=D(n/65536)local W=D((n%65536)/256)local Z=n%256 x(J,P(p,W,Z))n=0 end elseif p=="="then x(J,P(D(n/65536)))if V>=U or L(j,V+1,V+1)~="="then x(J,P(D((n%65536)/256)))end break end V=V+1 end S[p]=W(J)end end end return(function(p,Z,P,L,U,S,g,D,y,q,w,Q,n,j,i,N,O,J,b,V,x)x,O,q,J,D,w,V,y,n,N,b,j,i,Q={},function(p,W)local Z=n(W)local P=function(P)return D(p,{P},W,Z)end return P end,function(p)local W,D=1,p[1]while D do j[D],W=j[D]-1,1+W if j[D]==0 then j[D],x[D]=nil,nil end D=p[W]end end,function()V=1+V j[V]=1 return V end,function(D,P,L,U)local a,j,I,z,v,n,k,V,B,t,g,c,e,h,G,E,C,r,M,l,q,Q while D do if D<9284538 then if D<4229929 then if D<3075561 then if D<2053182 then if D<851662 then if D<323576 then if D<112821 then D=p[W(3945)]g={}else g=W(4005)D=p[g]g=D()D=g and 5961538 or 10788528 end else D=16254798 a=nil E=nil M=nil end else if D<1801463 then if D<1417925 then g=W(3969)D=p[g]g=D()g=W(3989)j=W(3970)D=p[g]g=D(j)D=7170958 else j=W(3984)M=W(3959)D=p[j]n=p[M]M=W(3962)Q=W(3940)M=n[M]M=M(n,Q)Q=W(3982)Q=M[Q]n={Q(M)}M={D(Z(n))}q=M[3]V=M[2]j=M[1]D=11502408 end else q=W(3959)V=p[q]q=W(4006)n=W(3959)D=V[q]a=W(3947)q=p[n]B=x[L[2]]z=x[L[1]]Q=W(3993)E=a..z k=B..E M=Q..k Q=W(4000)Q=q[Q]n={Q(q,M)}V=W(3998)V=D[V]V=V(D,Z(n))j=V D=3131577 end end else if D<2553861 then if D<2294095 then if D<2112312 then E=W(3950)D=10466780 B=j[E]E=nil k=B~=E M=k else n=0 Q=W(3984)M=p[Q]a=W(3991)E=j[a]a={M(E)}B=a[3]D=16254798 k=a[2]Q=a[1]end else D=0 q=D n=W(3959)M=J()B=W(4001)g=p[n]n=W(3988)D=g[n]Q=J()n=J()x[n]=D D={}x[M]=D D=W(3936)x[Q]=D k=p[B]B=W(4002)g=k[B]B=W(4004)k=g(B)g=W(3997)D=k[g]k=J()x[k]=D g=W(3958)E=N(10371107,{M})D=false B=D D=p[g]g=D(E)E=g D=not E D=D and 14387454 or 4215979 end else if D<2784340 then g=W(3958)j=w(8731626,{})D=p[g]g=D(j)D=15434549 else n=nil D=11502408 M=nil end end end else if D<3880578 then if D<3369939 then if D<3273081 then if D<3098650 then q=W(3959)V=W(3959)g=p[V]V=W(4006)D=g[V]B=W(3957)V=p[q]M=W(3993)k=x[L[2]]Q=k..B n=M..Q M=W(4000)M=V[M]g=W(3998)g=D[g]q={M(V,n)}g=g(D,Z(q))j=g D=3131577 else D=W(3936)q=J()Q=W(3950)x[q]=D M=j[Q]D=M and 5236783 or 10472288 n=M end else l,v=r(I,l)D=l and 11158613 or 9803468 end else if D<3601567 then if D<3547357 then D=15434549 else h=false D=6562513 a=h end else B=W(3981)k=W(3972)n=V Q=p[k]k=W(3964)D=Q[k]k=M[B]B=W(3978)Q=D(k,B)D=Q and 14582977 or 13876883 end end else if D<4209535 then if D<4109814 then if D<4067824 then V=W(3966)g=W(3943)D=p[g]j=W(4010)g=D(j)D={}x[L[1]]=D j=p[V]D=p[W(3999)]V=W(3952)g=j[V]V=x[L[1]]q=x[L[2]]j=g(V,q)g={}else E=W(3972)B=p[E]n=q E=W(3964)a=W(3981)k=B[E]E=M[a]a=W(3978)B=k(E,a)Q=B D=B and 9066197 or 14729169 end else g=W(3968)D=p[g]g=D()D=4988364 end else if D<4214200 then M=W(3959)n=p[M]M=W(3962)M=n[M]Q=W(3940)M=M(n,Q)Q=W(3974)n=W(4013)n=M[n]D=13598180 n=n(M,Q)q=not n j=q else D=i(4338598,{Q,n,M,k})g=W(3968)q=nil p[g]=D g=W(3969)D=i(10059521,{Q})k=b(k)E=nil a=y(6074648,{})p[g]=D g=W(3955)D=p[g]B=nil g=D(a)g=W(3955)D=p[g]a=w(13600585,{})n=b(n)g=D(a)M=b(M)g=W(3955)a=O(3504434,{})Q=b(Q)D=p[g]g=D(a)D=7061923 end end end end else if D<7265040 then if D<6168521 then if D<5649908 then if D<5196252 then if D<4667512 then D=nil V=W(3936)g=x[L[1]]j=D D=g==V D=D and 3094889 or 1982115 else D=p[W(4011)]g={}end else Q=D E=W(3950)B=j[E]E=W(3975)k=B~=E D=k and 2088367 or 10466780 M=k end else if D<6033771 then if D<5872382 then q=W(3959)V=p[q]n=W(3940)q=W(3962)q=V[q]q=q(V,n)n=W(3992)V=W(4013)V=q[V]V=V(q,n)j=not V D=j and 10297039 or 11066230 g=j else g=W(3948)D=p[g]D=D and 10146501 or 15619223 end else D=11666662 end end else if D<6996104 then if D<6364674 then if D<6311995 then D=p[W(4015)]g={}else g={}D=p[W(3938)]end else D=15833263 end else if D<7162862 then g={}D=p[W(3976)]V=nil else D=p[W(3949)]g={}end end end else if D<8745553 then if D<7656696 then if D<7496951 then if D<7447289 then Q=7449423635 M=V==Q q=M D=9702119 else D=p[W(3971)]g={}end else g=W(4005)D=p[g]g=D()D=g and 12393554 or 112152 end else if D<8463391 then if D<8226597 then D=g and 14277007 or 7061923 else D=757344 end else g=W(3942)D=p[g]D=D and 9038330 or 6225857 end end else if D<9083086 then if D<9058732 then if D<8986032 then g=W(3942)D=p[g]D=D and 13787975 or 13425712 else n=W(3959)q=p[n]n=W(3973)V=q[n]q=W(3985)j=V[q]V=W(3937)g=j[V]j=W(3977)D=g[j]g=W(3944)g=D[g]g=g(D)D=6225857 end else k=W(3939)k=M[k]B=W(4017)D=14729169 k=k(M,B)Q=k end else if D<9207991 then I=W(3966)r=p[I]I=W(3952)z=r[I]I=x[L[3]]l=x[q]r=z(I,l)r=W(4005)z=p[r]I=O(9984032,{L[3];L[2];q})r=z()r=W(3958)z=p[r]r=z(I)I=4 r=W(4005)D=8277909 z=p[r]r=z(I)else V,M=q(j,V)D=V and 3803118 or 1515846 end end end end end else if D<12850567 then if D<10471307 then if D<10081235 then if D<9770782 then if D<9728561 then if D<9692933 then C=W(3958)G=w(3996704,{L[3],L[4]})t=p[C]C=t(G)D=10095545 C=nil else D=n g=q D=8189844 end else n=W(3950)D=j[n]x[L[1]]=D D=2177799 end else if D<9996912 then if D<9842655 then r=true z=a==r D=z and 9175229 or 8277909 else g=W(3980)M=W(4014)j=W(4010)n=W(4006)q=W(3959)D=p[g]V=p[q]q=W(3962)q=V[q]q=q(V,n)n=x[L[1]]M=q[M]V={M(q,n)}g=D(j,Z(V))g=W(4005)D=p[g]g=D()g=W(3959)j=W(3956)D=p[g]g=W(3962)g=D[g]Q=W(3959)g=g(D,j)j=x[L[2]]V=x[L[3]]M=p[Q]Q=W(3973)n=M[Q]M=W(3985)q=n[M]D=W(3990)D=g[D]D=D(g,j,V,q)D=p[W(4012)]g={}end else D=7608142 end end else if D<10308118 then if D<10148050 then if D<10100515 then D=15833263 else j=N(5787346,{})g=W(3958)D=p[g]g=D(j)D=15619223 end else V=D Q=W(3940)M=W(3959)n=p[M]M=W(3962)M=n[M]M=M(n,Q)n=W(4013)Q=W(3996)n=M[n]n=n(M,Q)q=not n D=q and 4210114 or 13598180 j=q end else if D<10394317 then g=W(3959)D=p[g]V=W(3961)q=W(4010)j=W(4006)g=W(3962)g=D[g]g=g(D,j)j=p[V]D=W(3998)D=g[D]V={j(q)}D=D(g,Z(V))g={}x[L[1]]=D D=p[W(3979)]else n=M D=Q D=10472288 end end end else if D<11598082 then if D<10901036 then if D<10748716 then if D<10473426 then D=n and 9738538 or 2177799 else g=W(3984)D=p[g]M=W(3940)n=W(3959)q=p[n]n=W(3962)n=q[n]n=n(q,M)M=W(3967)M=n[M]q={M(n)}n={D(Z(q))}j=n[2]D=9264078 g=n[1]q=g V=n[3]end else D=p[W(3995)]g={}end else if D<11466983 then if D<11079297 then D=g and 889473 or 7170958 else z=l t=0 h=n~=t D=h and 12589166 or 13433807 end else q,M=j(V,q)D=q and 4098276 or 6314058 end end else if D<12209855 then if D<11990127 then if D<11670090 then g=W(4005)D=p[g]j=.8 g=D(j)D=g and 8863335 or 7489041 else n=D Q=4442272183 M=V==Q D=M and 9702119 or 7433316 q=M end else D=p[W(3953)]g={}end else if D<12537966 then g=W(3958)D=p[g]j=w(15180264,{L[1]})g=D(j)D=7608142 else t=x[q]G=W(4009)C=p[G]G=C(v)h=t==G D=h and 3583461 or 6562513 end end end end else if D<14692229 then if D<14061764 then if D<13600073 then if D<13532940 then if D<13433031 then D=11666662 else G=W(4016)C=p[G]c=x[L[4]]G=C(c)c=W(4016)C=p[c]c=C(v)t=G~=c D=t and 9475681 or 10095545 end else D=V g=j D=11066230 end else if D<13798381 then if D<13755106 then D=145829 else g=W(3958)j=w(10555131,{})D=p[g]g=D(j)D=13425712 end else n=nil M=nil D=9264078 end end else if D<14373085 then if D<14354646 then if D<14253925 then g=W(4005)D=p[g]g=D()D=16748815 else q=W(3959)g=p[q]q=W(3986)q=g[q]q=q(g)g=false D=q~=g D=14086290 end else Q=W(3983)e=W(3959)D=p[Q]z=p[e]e=W(3973)a=z[e]z=W(3985)E=a[z]a=W(3937)B=E[a]E=W(3954)k=B[E]E=W(3960)e=W(3959)B=M[E]E=0 Q=D(k,B,E)Q=W(4005)D=p[Q]Q=D()Q=W(3983)D=p[Q]z=p[e]e=W(3973)a=z[e]z=W(3985)E=a[z]a=W(3937)B=E[a]E=W(3954)k=B[E]E=W(3960)B=M[E]E=1 Q=D(k,B,E)D=3014463 end else if D<14466894 then a=W(3966)g=p[a]a=W(3952)r=W(4006)D=g[a]e=W(3959)a=x[M]z=x[k]g=D(a,z)g=W(3980)a=W(4010)D=p[g]z=p[e]e=W(3962)e=z[e]I=W(4014)e=e(z,r)I=e[I]r=x[M]z={I(e,r)}g=D(a,Z(z))D=4215979 else a=W(3959)B=W(3981)Q=W(3989)D=p[Q]k=M[B]Q=D(k)Q=W(4005)D=p[Q]k=.2 Q=D(k)E=p[a]a=W(3973)B=E[a]E=W(3985)k=B[E]r=.1 B=W(3937)Q=k[B]k=W(3954)D=Q[k]z=W(3987)E=W(3987)B=M[E]Q=W(3987)a=p[z]z=W(4003)E=a[z]z=0 e=0 a=E(z,e,r)k=B*a D[Q]=k Q=W(4005)D=p[Q]k=.2 Q=D(k)D=13876883 end end end else if D<16125464 then if D<15298060 then if D<15168005 then if D<15018255 then D=Q and 14355502 or 3014463 else r=W(3984)D=3358053 z=p[r]v=x[L[3]]h={z(v)}r=h[1]l=h[3]I=h[2]end else g=W(3968)D=p[g]g=D()g=x[L[1]]j=W(3936)D=g~=j D=D and 4206164 or 4988364 end else if D<15758431 then if D<15503267 then j=W(3965)g=p[j]j=W(4005)D=g[j]j=10 g=D(j)D=g and 2744732 or 12185457 else D=145829 end else C=1 t=n+C n=t v=nil D=3358053 z=nil end end else if D<16601046 then if D<16539929 then if D<16219519 then n=2753915549 V=W(3959)g=p[V]V=W(3988)j=P D=g[V]V=D q=V==n g=q D=q and 8189844 or 11719610 else B,E=Q(k,B)D=B and 16633441 or 16590670 end else n=nil D=p[W(3963)]j=nil q=b(q)g={}end else if D<16648781 then M=B a=true e=W(4009)z=p[e]I=W(3935)r=E[I]e=z(r)I=W(4016)v=W(3946)h=W(3951)x[q]=e r=p[I]l=E[v]I=r(l)l=W(4016)r=p[l]v=E[h]l=r(v)z=I>l D=z and 15031029 or 757344 else q=W(3959)g=p[q]q=W(3986)q=g[q]q=q(g)g=false D=q~=g D=D and 2421665 or 14086290 end end end end end end end D=#U return Z(g)end,function(p,W)local Z=n(W)local P=function()return D(p,{},W,Z)end return P end,0,function(p,W)local Z=n(W)local P=function(P,L)return D(p,{P,L},W,Z)end return P end,function(p)for W=1,#p,1 do j[p[W]]=1+j[p[W]]end if P then local D=P(true)local Z=U(D)Z[W(4008)],Z[W(3941)],Z[W(4007)]=p,q,function()return-3381338 end return D else return L({},{[W(3941)]=q;[W(4008)]=p;[W(4007)]=function()return-3381338 end})end end,function(p,W)local Z=n(W)local P=function(P,L,U,S)return D(p,{P,L;U,S},W,Z)end return P end,function(p)j[p]=j[p]-1 if j[p]==0 then j[p],x[p]=nil,nil end end,{},function(p,W)local Z=n(W)local P=function(P,L,U)return D(p,{P,L,U},W,Z)end return P end,function(p,W)local Z=n(W)local P=function(...)return D(p,{...},W,Z)end return P end return(Q(16202818,{}))(Z(g))end)(getfenv and getfenv()or _ENV,unpack or table[W(3994)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+
+local Counter = 0
+local PlaceID = game.PlaceId
+     local AllIDs = {}
+     local foundAnything = ""
+     local actualHour = os.date("!*t").hour
+     local Deleted = false
+
+     local File = pcall(function()
+         AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+     end)
+     if not File then
+         table.insert(AllIDs, actualHour)
+         writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+     end
+    
+     function TPReturner()
+         local Site;
+         if foundAnything == "" then
+             Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+         else
+             Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+         end
+         local ID = ""
+         if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+             foundAnything = Site.nextPageCursor
+         end
+         local num = 0;
+         for i,v in pairs(Site.data) do
+             local Possible = true
+             ID = tostring(v.id)
+             if tonumber(v.maxPlayers) > tonumber(v.playing) then
+                 for _,Existing in pairs(AllIDs) do
+                     if num ~= 0 then
+                         if ID == tostring(Existing) then
+                             Possible = false
+                         end
+                     else
+                         if tonumber(actualHour) ~= tonumber(Existing) then
+                             local delFile = pcall(function()
+                                delfile("NotSameServers.json")
+                                 AllIDs = {}
+                                 table.insert(AllIDs, actualHour)
+                             end)
+                         end
+                     end
+                     num = num + 1
+                 end
+                 if Possible == true then
+                     table.insert(AllIDs, ID)
+                     wait()
+                     pcall(function()
+                         writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                         wait()
+                         game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+                     end)
+                     wait(4)
+                 end
+             end
+         end
+     end
+ 
+     function Teleport()
+        while wait() do
+            pcall(function()
+                 TPReturner()
+                 if foundAnything ~= "" then
+                     TPReturner()
+                 end
+            end)
+        end
+     end
+
+     spawn(function()
+        local ohString1 = "SetTeam"
+        local ohString2 = "Pirates"
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(ohString1, ohString2)
+     end)
+
+ 
+spawn(function()
+   while wait(.8) do
+      if Chest_Farm then
+        pcall(function()
+            for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+                if string.find(v.Name, "Chest") then
+                    print(v.Name)
+                    wait(.4)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,0,0.1)
+                    wait(.4)
+                end
+            end
+            for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+                if string.find(v.Name, "Chest") and v:IsA("TouchTransmitter") then
+                firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+                wait()
+                firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+                end
+            end
+        end)
+      end
+end
+end)
+
+spawn(function()
+    while wait() do
+        if Server_Hop then
+            pcall(function()
+                if not game:GetService("Workspace"):FindFirstChild("Chest1") and not game:GetService("Workspace"):FindFirstChild("Chest2") and not game:GetService("Workspace"):FindFirstChild("Chest3") then
+                Teleport()
+                print("Finding new server")
+                end
+            end)
+        end
+    end
+end)
+spawn(function()
+    while task.wait(15) do
+        pcall(function()
+        if Chest_Farm then
+            game.Players.LocalPlayer.Character.Head:Destroy()
+        end
+    end)
+    end
+end)
+end
