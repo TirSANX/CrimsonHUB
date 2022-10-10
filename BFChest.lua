@@ -103,9 +103,9 @@ spawn(function()
             for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
                 if string.find(v.Name, "Chest") then
                     print(v.Name)
-                    wait(.2)
+                    wait(.1)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,0,0.1)
-                    wait(.2)
+                    wait(.1)
                 end
             end
             for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
@@ -133,7 +133,7 @@ spawn(function()
     end
 end)
 spawn(function()
-    while task.wait(15) do
+    while task.wait(10) do
         pcall(function()
         if Chest_Farm then
             game.Players.LocalPlayer.Character.Head:Destroy()
