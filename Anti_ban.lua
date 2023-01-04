@@ -47,3 +47,4 @@ X = hookmetamethod(game, "__namecall", function(self, ...)
    end
    return X(self, ...)
 end)
+warn("bypassing ban system..")
