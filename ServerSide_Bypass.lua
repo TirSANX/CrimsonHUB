@@ -109,3 +109,4 @@ if setfpscap then
 end
 
 game:GetService("ScriptContext"):SetTimeout(0.5)
+warn("bypassing server detection..")
