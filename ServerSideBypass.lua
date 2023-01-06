@@ -1,9 +1,6 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-repeat
-    task.wait()
-until game:IsLoaded()
 local System = {
 379614936,
 860428890,
