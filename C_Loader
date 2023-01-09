@@ -24,6 +24,8 @@ local games = {
     [8304191830] = "AAT.lua",
     [8349889591] = "AAT.lua",
     [914010731] = "Ro_ghoul.lua",
+    [6990129309] = "ADimension.lua",
+    [6938803436] = "ADimension.lua"
 }
 
 for i, v in pairs(games) do
